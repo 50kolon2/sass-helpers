@@ -8,7 +8,6 @@
 ```
 
 2. Import sass-helpers in your stylesheet:
-
 ```scss
 @import 'sass-helpers/assets/stylesheets/sass-helpers';
 ```
