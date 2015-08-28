@@ -1,0 +1,49 @@
+// Screen Sizes
+// ==========================================================================
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+// Extra small devices - Phones (<768px)
+$bp-xs: new-breakpoint(min-width $screen-xs-min 4);
+
+// Small devices -  Tablets (≥768px)
+$bp-sm: new-breakpoint(min-width $screen-sm-min 8);
+
+// Medium devices - Desktops (≥992px)
+$bp-md: new-breakpoint(min-width $screen-md-min 12);
+
+// Large devices - Desktops (≥1200px)
+$bp-lg: new-breakpoint(min-width $screen-lg-min 16);
+
+// Exclusively Extra small devices - Phones (<768px)
+$bp-ex-xs: new-breakpoint(max-width $screen-xs-max 4);
+
+// Exclusively Small devices -  Tablets (≥768px && <992)
+$bp-ex-sm: new-breakpoint(max-width $screen-sm-min and max-width $screen-sm-max 8);
+
+// Exclusively Medium devices - Desktops (≥992px && <1200)
+$bp-ex-md: new-breakpoint(max-width $screen-md-min and max-width $screen-md-max 12);
+
+// Exclusively Large devices - Desktops (≥1200px)
+$bp-ex-lg: new-breakpoint(min-width $screen-lg-min 16);

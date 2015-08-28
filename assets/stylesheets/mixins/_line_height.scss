@@ -1,0 +1,16 @@
+// *-------------------------------------------------------------------
+// | @desc        Convert line-height to rem with pixel fallback.
+// | @name        line-height
+// | @author      Sam
+// | @tested      [-]
+// | @requires    [-]
+// |
+// | @param $height-value - the value you want to convert.
+// |
+// | e.g. @include line-height(12);
+// *-------------------------------------------------------------------
+
+@mixin line-height($height-value: 12) {
+  line-height: $height-value + px; //fallback for old browsers
+  line-height: (.125 * $height-value) + rem;
+}

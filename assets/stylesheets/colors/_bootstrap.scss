@@ -1,0 +1,57 @@
+///////////////////////////////////
+/// Bootstrap
+///////////////////////////////////
+
+// Defaults
+// -------------------------
+
+$black        : #000  !default;
+$gray-darker  : #222  !default;
+$gray-dark    : #333  !default;
+$gray         : #555  !default;
+$gray-light   : #999  !default;
+$gray-lighter : #eee  !default;
+$white        : #fff  !default;
+
+
+// Accent colors
+// -------------------------
+
+$blue-boot      : #049cdb !default;
+$blue-dark-boot : #0064cd !default;
+$green-boot     : #46a546 !default;
+$red-boot       : #9d261d !default;
+$yellow-boot    : #ffc40d !default;
+$orange-boot    : #f89406 !default;
+$pink-boot      : #c3325f !default;
+$purple-boot    : #7a43b6 !default;
+
+
+// Extra colors
+// -------------------------
+
+$link-color                          : #08c   !default;
+$table-background-accent             : #f9f9f9 !default;
+$table-background-hover              : #f5f5f5 !default;
+$btn-info-background                 : #5bc0de !default;
+$btn-info-background-highlight       : #2f96b4 !default;
+$btn-success-background              : #62c462 !default;
+$btn-success-background-highlight    : #51a351 !default;
+$btn-danger-background               : #ee5f5b !default;
+$btn-danger-background-highlight     : #bd362f !default;
+$btn-inverse-background              : #444   !default;
+$input-border                        : #ccc   !default;
+$dropdown-divider-top                : #e5e5e5 !default;
+$navbar-text                         : #777   !default;
+$navbar-inverse-background           : #111 !default;
+$navbar-inverse-background-highlight : #222 !default;
+$navbar-inverse-border               : #252525 !default;
+$pagination-border                   : #ddd   !default;
+$warning-text                        : #c09853 !default;
+$warning-background                  : #fcf8e3 !default;
+$error-text                          : #b94a48 !default;
+$error-background                    : #f2dede !default;
+$success-text                        : #468847 !default;
+$success-background                  : #dff0d8 !default;
+$info-text                           : #3a87ad !default;
+$info-background                     : #d9edf7 !default;

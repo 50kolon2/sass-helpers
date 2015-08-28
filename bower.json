@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "sass-helpers",
+  "description": "Helper package for Sass.",
+  "main": "assets/stylesheets/_sass-helpers.scss",
+  "license": "proprietary",
+  "homepage": "http://gitlab.smb.nu/valhalla/sass-helpers",
+  "authors": [
+    "Sam Nydahl <sam.nydahl@smb.nu>"
+  ],
+  "keywords": [
+    "css",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.smb.nu/valhalla/sass-helpers.git"
+  }
+}

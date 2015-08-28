@@ -1,0 +1,30 @@
+// *-------------------------------------------------------------------
+// | @desc        Convert px to em
+// | @name        px to em
+// | @author      Sam
+// | @tested      [-]
+// | @requires    [variables]
+// |
+// | @param $values - the values in pixel you want to convert.
+// |    You can pass in an array of values. Each value separated by space.
+// |
+// | @param $el-font-size - the element font size in pixel e.g.
+// |    you want to set margin on your text, and font size on your
+// |    text is equivalent to 14px, then your context is 14px.
+// |
+// | e.g. margin: px-to-em(16px 20px 20px 16px, 16px);
+// *-------------------------------------------------------------------
+
+@function px-to-em ($values, $el-font-size: $base-font-size) {
+  $list: ();
+
+  @each $value in $values {
+    @if ($value == 0 or $value == auto) {
+      $list: append($list, $value);
+    } @else {
+      $em-value: ($value/$el-font-size)+em;
+      $list: append($list, $emValue);
+    }
+  }
+  @return $list;
+}

@@ -1,0 +1,21 @@
+// *-------------------------------------------------------------------
+// | @desc        Convert font-size from px to rem with px fallback
+// | @name        font-size
+// | @author      Sam
+// | @tested      [-]
+// | @requires    [-]
+// |
+// | @param $size - the value in pixel you want to convert
+// |
+// | e.g. @include font-size(12px);
+// *-------------------------------------------------------------------
+
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return $rem-size * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculate-rem($size);
+}
