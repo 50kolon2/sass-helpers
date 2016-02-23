@@ -1,4 +1,4 @@
-$base-font-dir: '/fonts';
+$base-font-dir: '/fonts' !default;
 
 @mixin font-face($family, $file-name, $style: normal, $weight: normal, $stretch : normal) {
 
@@ -8,11 +8,11 @@ $base-font-dir: '/fonts';
     font-weight: $weight;
     font-stretch: $stretch;
     src: url('#{$base-font-dir}/#{$file-name}.ttf') format('truetype');
-    // src: url('#{$base-font-dir}/#{$file-name}.eot');
-    // src: url('#{$base-font-dir}/#{$file-name}.eot?#iefix') format('embedded-opentype'),
-    //       url('#{$base-font-dir}/#{$file-name}.woff') format('woff'),
-    //       url('#{$base-font-dir}/#{$file-name}.ttf') format('truetype'),
-    //       url('#{$base-font-dir}/#{$file-name}.svg##{$file-name}') format('svg');
+    src: url('#{$base-font-dir}/#{$file-name}.eot');
+    src: url('#{$base-font-dir}/#{$file-name}.eot?#iefix') format('embedded-opentype'),
+           url('#{$base-font-dir}/#{$file-name}.woff') format('woff'),
+           url('#{$base-font-dir}/#{$file-name}.ttf') format('truetype'),
+           url('#{$base-font-dir}/#{$file-name}.svg##{$file-name}') format('svg');
   }
 
 };
